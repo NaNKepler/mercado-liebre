@@ -1,0 +1,377 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap');
+
+/* NORMALIZACIÓN */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+:root {
+    /* COLORES */
+    --amarillo: #eac926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+    --negro: #000000;
+    --blanco: #ffffff;
+    /* FUENTES */
+    --text-sm: 1.2em;
+    --text-md: 1.6em;
+    --text-lg: 1.8em;
+    --title-md: 2.4em;
+    /* FAMILIA DE FUENTES */
+    --roboto: 'Roboto', sans-serif;    
+}
+
+/* ESTILOS COMUNES */
+
+body {
+background-color: var(--gris-claro);
+}
+
+
+h2 {
+    font-size: var(--title-md);
+}
+
+p {
+    font-size: var(--text-sm);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--roboto);
+}
+
+.flex-row {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+/* CABECERA */
+
+header {
+    background-color: var(--amarillo);
+    padding: 10px;
+}
+
+/*div.topHeader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5%;
+}*/
+
+header picture.logo {
+    display: block;
+    width: 40%;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+}
+
+header nav {
+    font-size: var(--text-sm);
+    /*display: flex;*/
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var(--negro);
+}
+
+
+header .form .input {
+    background-color: var(--blanco);
+    border: 1px solid var(--negro);
+    color: var(--gris-oscuro);
+    padding: 2px;
+}
+
+header .form .submit {  
+    background-color: var(--blanco);
+    border: 1px solid var(--negro);
+    width: 18px;
+    padding: 2px;
+    
+}
+
+/*header div.topHeader p {
+    text-align: center;
+}*/
+
+div.burger-menu i {
+    background-color: #0044aa;
+    font-size: 20px;
+    color: var(--blanco);
+    height: 40px;
+    width: 40px;
+    margin: 10px 0 20px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+div.burger-menu {
+    display: block;
+    text-align: center;
+}
+
+
+/* BANNER */
+
+section.banner img {
+    width: 100%;
+}
+
+/* MAIN */
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article {
+    background-color: var(--blanco);
+    margin: 10px 0;
+}
+
+main section article picture img {
+    width: 100%;
+}
+
+h2,
+.description{
+    color: var(--gris-oscuro);
+}
+
+main section article .price {
+    font-size: var(--text-lg);
+    /*width: 30%;*/
+}
+
+.discount,
+.description {
+    font-size: var(--text-md);
+}
+
+.description {
+    display: none;
+}
+
+.navegation {
+    display: none;
+    
+}
+
+.navegation ul {
+    
+    display: flex;
+}
+
+.navegation li {
+    margin: 0 15px;
+}
+
+main section article i,
+.discount {
+    color: var(--verde);
+}
+
+/*.discount {
+    width: 70%;
+}*/
+
+main section article i {
+    font-size: var(--text-md);
+    border: 1px solid var(--verde);
+    border-radius: 50%;
+    display: block;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3 {
+    margin: 20px 0px;
+}
+
+article div.product-card {
+    width: 100%;
+    border: 1px solid var(--gris-claro);
+    padding: 15px;
+    position: relative;
+}
+
+/* FOOTER */
+
+div.credit-card {
+    text-align: center;
+}
+
+div.credit-card i {
+    background-color: var(--blanco);
+    font-size: 3em;
+    color: var(--celeste);
+    height: 1.4em;
+    width: 1.6em;
+    margin: 15px 0 10px 0;
+    padding: 7px;
+}
+
+div.gift {
+    text-align: center;
+}
+
+div.gift i {
+    background-color: var(--blanco);
+    font-size: 3em;
+    color: var(--celeste);
+    height: 1.4em;
+    width: 1.6em;
+    margin: 15px 0 10px 0;
+    padding: 7px;
+}
+
+div.user-shield {
+    text-align: center;
+}
+
+div.user-shield i {
+    background-color: var(--blanco);
+    font-size: 3em;
+    color: var(--celeste);
+    height: 1.4em;
+    width: 1.6em;
+    margin: 15px 0 10px 0;
+    padding: 7px;
+}
+
+footer article h3 {
+    text-align: center;
+    font-size: var(--text-md);
+    padding: 2px;
+    
+}
+
+footer article p {
+    font-size: var(--text-sm);
+    padding: 2px;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    padding: 30px;
+}
+
+/* RESPONSIVE */
+
+@media  (min-width: 768px) {
+    .products-container article {
+        max-width: 22%;
+    }
+    .topHeader {
+        display: flex;
+        /*flex-wrap: wrap;*/
+        justify-content: space-between;
+    }
+    .navegation {
+        display: flex;
+        justify-content: space-between;
+    }
+ }
+
+
+@media screen and (min-width: 361px) {
+    .description {
+    display: block;
+    /*display: flex;*/
+    justify-content: space-between;
+    }
+
+    .products-container {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .products-container article {
+        max-width: 45%;
+    }
+
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media  (min-width: 361px) {
+    
+    .navegation {
+        text-decoration: none;
+        color: #222222;
+        /*border: dotted 2px red;*/
+        display: inline-block;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px 0;
+        /*justify-content: space-between;*/
+    }
+    .left-navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0px;
+        display: flex;
+        /*margin: 0 20px;*/
+    }
+    .right-navbar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0px;
+        display: flex;
+        /*margin: 0 20px;*/
+    }
+}
+
+@media (min-width: 361px) {
+   header .burger-menu {
+        display: none;
+    }
+}
+
+@media  (min-width: 361px) {
+    
+   .topHeader {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .compraCuotas {
+        max-width: 350px;
+        text-align: center;
+    }
+}
+
+
+
