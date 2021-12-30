@@ -8,6 +8,6 @@ const publicPath = path.resolve(__dirname, './public');
 app.use(express.static(publicPath));
 app.get('/', (req, res) => res.sendFile(path.resolve(__dirname, './views/home.html')));
 
-app.listen(process.env.PORT ||3000, function() {
+app.listen(process.env.PORT ||3000, () {
     console.log("Belleza de servidor FUNCIONANDO por puerto 3000");
 })
